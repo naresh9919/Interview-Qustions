@@ -1,0 +1,128 @@
+1.What is the purpose of a post-mortem meeting?
+ A post-mortem meeting is held at the end of a project. The goal is to look at the project from start to finish, to determine what went right and what can be improved. You can invite anyone who has been involved in the project at some stage.
+2.What are the success factors for Continuous Integration?
+Examples of answers:
+Maintain a code repository
+Automate the build
+Make the build self-testing
+Everyone commits to the baseline every day
+Every commit (to baseline) should be built
+Keep the build fast
+Test in a clone of the production environment
+Make it easy to get the latest deliverables
+Everyone can see the results of the latest build
+Automate deployment
+3.What is Continious Delivery? Continious Deployment?
+The difference between continuous delivery and continuous deployment is the presence of a manual approval to update to production. With continuous deployment, production happens automatically without explicit approval. Continuous delivery automates the entire software release process.
+4.What is the difference between Continuous Integration, Continious Delivery and Continious Deployment?
+Continuous integration: Continuous integration is a development practice of automating the integration of code changes from several contributors to a single software project. By regularly integrating, you can detect errors quickly and locate them easily. The source code version control is the crux of the CI process.
+Continuous Delivery: It is a process in which continuous integration, automated testing, and automated deployment capabilities develop, build, test, and release high-quality software rapidly and reliably with minimal manual overhead.
+Continuous Deployment: It is a process in which qualified changes in the architecture or software code are deployed automatically to production as soon as they are ready and without human intervention.
+5.What’s the difference between git and github ? 
+Git: Git is a distributed version control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows. 
+
+GitHub: GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. 
+
+	Git	GitHub
+	Git is a software.	GitHub is a service.
+	Git is a command-line tool	GitHub is a graphical user interface
+	Git is installed locally on the system	GitHub is hosted on the web
+	Git is maintained by linux.	GitHub is maintained by Microsoft.
+	Git is focused on version control and code sharing.	GitHub is focused on centralized source code hosting.
+	Git is a version control system to manage source code history. 
+ 	GitHub is a hosting service for Git repositories.
+		
+5.  What about git and SVN ?
+               
+GIT	SVN
+Git is open source distributed vice control system developed by Linus Torvalds in 2005. It emphasis on speed and data integrity	Apache Subversion is an open source software version and revision control system under Apache license.
+Git has a Distributed Model.	SVN has a Centralized Model.
+In git every user has their own copy of code on their local like their own branch.	In SVN there is central repository has working copy that also make changes and committed in central repository.
+In git we do not required any Network to perform git operation.  	In SVN we required Network for runs the SVN operation. 
+Git is more difficult to learn. It has more concepts and commands. 	SVN is much easier to learn as compared to git.
+Git deals with large number of files like binary files that change quickly that why it become slow.	SVN control the large number of binary files easily.
+In git we create only .git directory.	In SVN we create .svn directory in each folder.
+It does not have good UI as compared to SVN.	SVN has simple and better user interface .
+
+6.What is git rebase?
+                Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow.
+7.In Git how do you revert a commit that has already been pushed and made public?
+
+Sometimes you may want to undo a whole commit with all changes. Instead of going through all the changes manually, you can simply tell git to revert a commit, which does not even have to be the last one. Reverting a commit means to create a new commit that undoes all changes that were made in the bad commit. Just like above, the bad commit remains there, but it no longer affects the the current master and any future commits on top of it.
+
+git revert {commit_id}
+
+8.What is puppet/chef/ansible used for? 
+Chef, Puppet, and Ansible are all configuration management tools, which means they are designed to install and manage software on existing servers.
+ Git Flow
+Git Flow is the most widely known branching strategy that takes a multi-branch approach to manage the source code. This approach consists of two main branches that live throughout the development lifecycle.
+Primary Branches
+master. The primary branch where all the production code is stored. Once the code in the “develop” branch is ready to be released, the changes are merged to the master branch and used in the deployment.
+develop. This is where all the actual development happens. All the pre-production code is stored here, and the completed code of all the supporting branches is merged directly to the develop branch.
+Support Branches
+During the development, developers create different branches for specific use cases using the develop branch as the base. The following are some branches created like that:
+feature-* feature branches are used to develop new features and branches off exclusively from the develop branch.
+hotfix-* This is to deal with production issues where quick fixes are required. They can branch off from the master itself, but need to be merged to both master and develop branches.
+release-* This branch is used to aggregate fixes and improvements and prepare for the production release. It will be branched from the develop branch and merged to both develop and master.
+
+Git Fetch 	Git Pull
+Gives the information of a new change from a remote repository without merging into the current branch	Brings the copy of all the changes from a remote repository and merges them into the current branch
+Repository data is updated in the .git directory	The local repository is updated directly
+Review of commits and changes can be done	Updates the changes to the local repository immediately.
+No possibility of merge conflicts.	Merge conflicts are possible if the remote and the local repositories have done changes at the same place.
+9. Mention what is Jenkins?
+Jenkins is an open source tool with plugin built for continuous integration purpose. The principle functionality of Jenkins is to keep a track of version control system and to initiate and monitor a build system if changes occur. It monitors the whole process and provides reports and notifications to alert.
+10. Explain what is continuous integration?
+In software development, when multiple developers or teams are working on different segments of same web application, we need to perform integration test by integrating all modules. In order to do that an automated process for each piece of code is performed on daily bases so that all your code get tested.
+11. Explain how you can move or copy Jenkins from one server to another?
+Slide a job from one installation of Jenkins to another by copying the related job directory
+Make a copy of an already existing job by making clone of a job directory by a different name
+Renaming an existing job by renaming a directory.
+12. Explain how can create a backup and copy files in Jenkins?
+Jenkins saves all the setting, build artifacts and logs in its home directory, to create a back-up of your Jenkins setup, just copy this directory. You can also copy a job directory to clone or replicate a job or rename the directory.
+13. Mention what are the two components Jenkins is mainly integrated with?
+Jenkin is mainly integrated with two components
+Version Control system like GIT, SVN
+And build tools like Apache Maven.
+14. Explain what is POM?
+In Maven, POM (Project Object Model) is the fundamental unit of work. It is an XML file which holds the information about the project and configuration details used to build a project by Maven.
+15. Why Maven Plugins are used?
+Maven plugins are used to
+Create a jar file
+Create war file
+Compile code files
+Unit testing of code
+Documenting projects
+Reporting
+16. List out what are the build phases in Maven?
+Build phases in Maven are
+Validate
+Compile
+Test
+Package
+Install
+Deploy
+17. Explain how you can produce execution debug output or error messages?
+To produce execution debug output you could call Maven with X parameter or e parameter.
+18. Explain the advantages of using SonarQube.
+Following are the advantages of SonarQube:
+SonarQube is open source
+SonarQube supports various languages such as C# and Java.
+SonarQube reports duplicate code, code coverage, unit testing, code complexity historical, and so on.
+We can integrate SonarQube with build tools, such as Gradle and ant.
+SonarQube has an Eclipse plugin such as Sonarlint.
+SonarQube supports external plugins such as plugin for ldap.	
+19. Explain the difference between SonarLint and SonarQube?
+SonarQube:
+SonarQube is the main server that performs complete analysis (activated by the different SonarQube scanners).
+The analysis is to provide your code base a 360 Â° view of the quality. To this end, it periodically analyzes each source line of your project.
+SonarLint:
+SonarLint is available only in the IDE (IntelliJ, Visual Studio and Eclipse).
+Its objective is to offer immediate feedback as you enter your code.
+It concentrates on what code you specify or modify for this function.
+SonarLint is an agent that enables us to connect with SonarQube and executes the analysis remotely.
+20. What is the difference between Sonar Runner and Sonar Scanner?
+“Runner” is the old name for "Scanner". All you need to know about the different SonarQube Scanners is present in the Scanners section of the official documentation. You can use the following option, if you are stuck on Java 7:
+SonarQube Runner (sonar-runner) up to version 5.5 of SonarQube.
+SonarQube Scanner (sonar-scanner) 2.6.1.
+
