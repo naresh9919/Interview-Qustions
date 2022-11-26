@@ -1,0 +1,266 @@
+DevOps Interview Questions
+1. What is Version control?
+Ans. It is a system that records changes to a file or set of files over time so that you can recall specific versions later.
+Q2. What are containers?
+Ans. Containers are a form of lightweight virtualization, heavier than ‘chroot’ but lighter than ‘hypervisors’. They provide isolation among processes while using the same kernel as the host machine, and ‘cgroups’ functionality within the kernel.
+Q3. What is Continuous Delivery?
+Ans. It is the practice of delivering the software for testing as soon as it is built by CI (Continuous Integration) servers.
+Q4. What are the uses of Version control?
+Ans. Below are some of the common uses of version control:
+•	Revert files back to a previous state.
+•	Revert the entire project back to a previous state.
+•	Compare changes over time.
+•	See who last modified something that might be causing a problem.
+•	Who introduced an issue and when.
+Q5. What are the core operations of DevOps in terms of development and Infrastructure?
+Ans. The core operations of DevOps are application development, code developing, code coverage, unit testing, packaging, deployment with infrastructure, provisioning, configuration, orchestration, and deployment.
+Q6. Can one consider DevOps as an Agile methodology?
+Ans. DevOps can be considered complementary to the agile methodology, but not completely similar.
+Q8. What is Git?
+Ans. Git is a Distributed Version Control system (DVCS). It can track changes to a file and allows you to revert back to any particular change.
+Q9. In Git how do you revert a commit that has already been pushed and made public?
+Ans. It can be done in two ways:
+•	By removing or fixing the bad file in a new commit and pushing it to the remote repository. Once the necessary changes to the file have been made, commit it to the remote repository. Use: git commit -m “commit message”
+•	By creating a new commit that undoes all changes that were made in the bad commit. To do this, use command: git revert <name of bad commit>
+Q10. What is Git bisect?
+Ans. Git bisect is used to find the commit that introduced a bug by using binary search.
+Q11. Why do you need a Continuous Integration of Dev & Testing?
+Ans. Continuous Integration of Dev and Testing improves the quality of software and reduces the time taken to deliver it, by replacing the traditional practice of testing after completing all development.
+Q12. Which is the most popular scripting language in DevOps?
+Ans. Python.
+Q13. What is Vagrant and what is it used for?
+Ans. A vagrant is a tool that can create and manage virtualized (or containerized) environments for testing and developing software.
+Q14. What are post mortem meetings?
+Ans. Post mortem meetings are done to discuss what went wrong and what steps should be taken so that failure doesn’t happen again.
+Q15. What is meant by Continuous Integration?
+Ans. It is a development practice that requires developers to integrate code into a shared repository several times a day.
+Q16. What’s a PTR in DNS?
+Ans. Pointer (PTR) record is used for reverse DNS (Domain Name System) lookup.
+Q17. What testing is necessary to make sure that a new service is ready for production?
+Ans. Continuous testing
+Q18. What is Continuous Testing?
+Ans. Continuous Testing is the process of executing automated tests as part of the software delivery pipeline to obtain immediate feedback on the business risks associated with the latest build.
+Q19. What is Automation Testing?
+Ans. Automation testing or Test Automation is a process of automating the manual process to test the application/system under test.
+Q20. What are the key elements of continuous testing?
+Ans. Risk assessment, policy analysis, requirements traceability, advanced analysis, test optimization, and service virtualization
+Q21. What are the Testing types supported by Selenium?
+Ans. Regression testing and functional testing
+Q22. Differentiate between Asset Management and Configuration Management.
+Ans. Asset Management, broadly defined, refers to any system that monitors and maintains things of value to an entity or group.
+Configuration Management is the process of planning for, identifying, controlling, and verifying the Configurations Items (CIs) within a service, recording their status, and, in support of Change Management, assessing the potential IT impact of changing those items.
+Q23. What is Puppet?
+Ans. It is a Configuration Management tool that is used to automate administration tasks.
+Q24. How does HTTP work?
+Ans. The HTTP protocol works in a client and server model like most other protocols. A web browser using which a request is initiated is called a client and a web server software that responds to that request is called a server. World Wide Web Consortium and the Internet Engineering Task Force are two important spokes in the standardization of the HTTP protocol.
+Q25. Describe two-factor authentication?
+Ans. Two-factor authentication is a security process in which the user provides two means of identification from separate categories of credentials; one is typically a physical token, such as a card, and the other is typically something memorized, such as a security code.
+Q26.  Which language is used in Git?
+Ans. Git is written in C. It is very fast and reduces runtimes overhead.
+Q27. Suppose you just made a bad Git commit and made it public, how would you revert it?
+Ans. The command to revert the Git commit is –
+git revert <commit hash>
+This command can revert any commands just by adding the commit ID.
+Q28. What is SubGit?
+Ans. SubGit is an open-source, version control tool for migrating Subversions (SVN) to Git. It allows creating a writable Git mirror of a Subversion repository, which can then be used to push to Git.
+Q29.  What is Ansible?
+Ans. Ansible is an open-source automation platform. It is powerful yet very simple to set up. Ansible facilitates complex tasks like configuration management, IT orchestration, application deployment, and task automation.
+Q30.  What is the use of Ansible?
+Ans. Ansible is used primarily in IT infrastructure for configuration management and automatically deploying software applications to remote nodes.
+Q31.  Explain the advantages of Ansible.
+Ans. The advantages of Ansible are:
+•	Free of cost
+•	Agentless
+•	Very low uptime
+•	Good performance
+•	Idempotent
+•	Very easy to learn
+•	Easy to pick up
+•	Declarative, not procedural
+•	Doesn’t require custom security infrastructure
+Q32. Describe IaC.
+Ans. IaC is the abbreviation for Infrastructure as Code. It manages and tracks infrastructure configuration in files and allows better and scalable infrastructure configuration. It ensures transparent tracking of changes through the versioning system.
+Q33. What is configuration management?
+Ans. It is a combination of practices and tools to automate the delivery and operation of infrastructure. It is used to –
+•	Model infrastructure
+•	Monitor and enforce desired configurations
+•	Automatically remediate any unexpected configuration drift
+Configuration management helps to expedite the software delivery process and deliver better software.
+Q34. What is Jenkins?
+Ans. Jenkins is an open-source continuous integration server that facilitates achieving a Continuous Integration process in an automated manner. It is also capable to highlight any errors in the project in its early stages.
+Q35. Name some useful plugins in Jenkins.
+Ans. Some useful plugins in Jenkins are:
+•	Dashboard View Plugin
+•	View Job Filters Plugin
+•	Exclusion
+•	GitHub/GitLab Pull Request Builder
+•	Hudson Extended Read Permission Plugin
+•	Post+build+task
+•	Amazon EC2
+•	HTML publisher
+•	Copy artifact
+•	JDK Parameter Plugin
+•	Job Configuration History Plugin
+•	Parameterized Trigger plugin
+Now, let’s move on and take a look at some more DevOps interview questions. 
+Q36. What is a Virtual Private Cloud?
+Ans. Virtual Private Cloud offers the flexibility to scale and control workloads. It provides global access to manage workloads when you connect your on-premises or remote resources to Google Cloud Platform (GCP).
+Q37. What is ‘Canary Release’?
+Ans. Canary Release refers to a pattern that reduces the risk of introducing a new version of software into the production environment. It is made available to the subset of the user and then to the complete user set.
+Q38. What is Docker?
+Ans. Docker is a tool to easily create, deploy, and run applications using containers. It packages an application with all its dependencies to ensure its seamless running. Docker allows applications to use the same Linux kernel they are already running on.
+Q39. On which platforms does a Docker run?
+Ans. Docker runs only on Linux and Cloud platforms, which are –
+Linux –
+•	Ubuntu 12.04 LTS+
+•	Fedora 20+
+•	RHEL 6.5+
+•	CentOS 6+
+•	Gentoo
+•	ArchLinux
+•	openSUSE 12.3+
+•	CRUX 3.0+
+Cloud –
+•	Amazon EC2
+•	Google Compute Engine
+•	Microsoft Azure
+•	Rackspace
+Q40. What is a Docker image?
+Ans. Docker images are used to create containers and comprise multiple layers for code execution.
+Q41. How will you launch a browser using WebDriver?
+Ans. There is a simple formula to launch a browser using WebDriver, which changes as per the browser name.
+For Chrome –
+WebDriver driver = new ChromeDriver();
+For Firefox –
+WebDriver driver = new FirefoxDriver();
+For Internet Explorer (IE) –
+WebDriver driver = new InternetExplorerDriver();
+Q42. Which Source Code Management (SCM) tools does Jenkins support?
+Ans. Jenkins supports the following SCM tools –
+•	AccuRev
+•	Clearcase
+•	CVS
+•	Git
+•	Mercurial
+•	Perforce
+•	RTC
+•	Subversion
+Q43. What is Chef?
+Ans. The chef is a powerful automation platform for transforming infrastructure into code. It also helps in writing scripts for automating IT processes.
+Q44. Explain the architecture of Chef.
+Ans. Chef comprises of –
+•	Chef Server – Also regarded as the central store for configuration data of infrastructure, and allows to dynamically drive node configuration based on data.
+•	Chef Node – These are referred to as clients as they run the Chef-client software.
+•	Chef Workstation – It is the place where users can interact with the Chef, develop and test cookbooks and recipes, and modify other configuration data.
+Q45. What is Recipe in Chef?
+Ans. A Recipe is a collection of Resources that configures a software package or infrastructure. The functions of a Recipe is –
+•	Installing and configuring software components
+•	Managing files
+•	Deploying applications
+•	Executing other recipes
+Q46. How is a Cookbook different from a Recipe in Chef?
+Ans. A Recipe is a collection of Resources to configure a software package or infrastructure, while a Cookbook comprises a collection of Recipes and other information in a systematic and manageable manner.
+Q47. What is Nagios Log Server?
+Ans. It is an enterprise-class log monitoring and management application and is very powerful in nature. Nagios Log Server facilitates viewing, sorting, and configuring logs from any source on any network. It also analyzes, collects, and stores log data as per requirements and offer extended data insight about the network infrastructure.
+Q48. What are the benefits of using Nagios Log Server?
+Ans. The benefits of using Nagios Log Server are:
+•	Automatically fixes problems
+•	Easy coordination with the tech team responses
+•	Ensures minimal impact of any IT infrastructure outages
+•	Meets the client-business service-level agreements
+•	Monitors business processes and infra
+•	Plans infrastructure upgrades before any failure
+•	Gives quick response to issues
+Q49. What is NRPE?
+Ans. It is the abbreviation for ‘Nagios Remote Plugin Executor’, and helps the users to monitor remote machine performance metrics by using Nagios plugins remotely on other Linux or Unix devices.
+Q50. What is kubectl?
+Ans. It is a command-line interface to run commands against Kubernetes clusters, deploy applications, manage cluster resources, and view logs.
+Q51. What is the use of Continuous Monitoring?
+Ans. With the help of Continuous Monitoring, a user can easily detect and measure the security implications for any unplanned changes and assesses the vulnerabilities in case of any information threat.
+Q52. How will you do Continuous Monitoring?
+Ans. Continuous Monitoring is done with the help of Application Performance Management (APM). APMs monitor, analyze, and manage all types of applications and IT infrastructure.
+Q53. What are some deployment patterns?
+Ans.  The most popular and advanced deployment patterns are Blue-Green Deployments, Canary Releases, Rolling Updates, Dark Launches, and Feature Toggles.  
+Q54.  Name the key components of DevOps.
+Ans.  Key components of DevOps are –
+•	Continuous Integration
+•	Continuous Testing
+•	Continuous Delivery
+•	Continuous Monitoring
+Q55. What is Sudo in Linux?
+Ans.  Sudo or superuser do is a program for Unix and Linux-based Systems. It helps in giving specific users permission to use specific system commands at the root level of the system.
+Q56. How does Kubernetes orchestrate Containers?
+Ans.  Kubernetes Containers are scheduled to run based on their scheduling policy and the available resources. Pods are added to a queue and the scheduler takes them off the queue and schedules it. In case of any failure, the error handler adds it back to the queue for later scheduling.
+ Q57. How will you restrict communication between Kubernetes Pods?
+Ans.  Communication between Kubernetes Pods is depending on the Container Network Interface (CNI) network plugin we are using. If it supports the Kubernetes network policy API, Kubernetes allows specifying network policies that restrict network access. Communication can be restricted based on IP addresses, ports, and/or selectors, a Kubernetes-specific feature for connecting and associating rules or components.  
+Q58. What are some of the advantages of using Git?
+Ans.  Some of the advantages of using Git include –
+•	Data redundancy and replication
+•	High availability
+•	High usability across projects
+•	Only one Git directory per repository
+•	Superior disk utilization and network performance
+•	Collaboration friendly
+Q59. Explain the benefits of using version control.
+Ans.  The primary benefits of version control are –
+•	Enables comparing files, identifying differences, and merging the changes
+•	Allows keeping track of application builds by identifying which version is under development, QA, and production
+•	Helps to improve the collaborative work culture
+•	Keeps different versions and variants of code files secure
+•	Allows seeing the changes made in the file’s content
+•	Keeps a complete history of the project files in case of central server breakdown
+Q60. What is “EUCALYPTUS”?
+Ans.  “EUCALYPTUS” is the abbreviation for Elastic Utility Computing Architecture for Linking Your Programs to Useful Systems”. It can be used with DevOps tools such as Puppet and Chef.
+Q61. Do you have any idea about the job responsibilities of a DevOps engineer?
+Ans.  Yes, DevOps engineers are usually responsible for enabling configuration, support, deployment, and fixing of issues with the business’s site/software. They work closely with developers and other technical teams and provide operational support for new and existing sites/software, and debug production issues.
+Q62. What are the most common DevOps practices?
+Ans.  DevOps best practices are –
+•	Continuous Integration
+•	Communication and Collaboration
+•	Continuous Delivery
+•	Infrastructure as Code
+•	Monitoring and Logging
+•	Microservices
+Q63. When would you use Selenium Grid?
+Ans.  Selenium Grid can be used while executing the same or different test scripts on multiple platforms and browsers, simultaneously. The aim is to achieve distributed test execution and save execution time.
+Q64. Explain the functioning of Selenium Grid.
+Ans.  Selenium Grid sends tests to the hub, which are then redirected to Selenium Webdriver. It then launches the browser and runs the test. The tests run in parallel with the entire test suite.
+Q65. Can we use the Selenium grid for performance testing?
+Ans.  Yes, but it is not as effective as Loadrunner, which is a dedicated Performance Testing tool.
+Q66. What is the Ansible module?
+Ans.  Ansible modules are reusable and standalone scripts used by the Ansible API. Each module provides a defined interface, accepting arguments, and returning information to Ansible. It also performs tasks like spinning up a cloud instance or changing a database password.
+Q67. What are Playbooks in Ansible?
+Ans.  Ansible playbook is the configuration, deployment, and orchestration language that defines work for a server configuration. Playbooks are developed in a basic text language and are readable by humans.
+Q68. Why should you prefer Containerization to Virtualization?
+Ans.  Here is why we should prefer Containerization to Virtualization –
+•	Containers ensure real-time provisioning and scalability, whereas Virtual Machines (VMs) provide slow provisioning
+•	They are lightweight than VMs
+•	Containers display superior performance than VMs
+•	Containers ensure better resource utilization than VMs
+ Q69. What is the Docker hub?
+Ans.  Docker Hub is a cloud-based repository of Docker. It allows users to create, test, store, and distribute container images. It helps to –
+•	Access public, open-source image repositories,
+•	Use space to create their own private repositories
+•	Build automated build functions, webhooks, and workgroups
+•	Store manually pushed images and links to Docker cloud
+Q70. What is Docker Swarm?
+Ans.  Docker Swarm is a tool for Docker containers, responsible for clustering and scheduling. It helps users establish and manage a cluster of Docker nodes as a single virtual system.
+Q71. Do you have ever used DevOps implementation in the cloud? Which are the most popular Cloud Computing Platforms?
+Ans.  Some popular Cloud Computing Platforms are –
+•	AWS (Amazon Web Services)
+•	Microsoft Azure
+•	Google Cloud
+Q72. What is Memcached?
+Ans.  Memcached is a general-purpose distributed memory caching system. It is a free and open-source system that helps to enhance the response time for data that can otherwise be recovered or constructed from some other source or database.
+Q73. Why should you use Memcache?
+Ans.  Memcache helps to –
+•	Speed up application processes
+•	Establish what to store and what not to
+•	Reduce the number of retrieval requests to the database
+•	Cuts down the I/O ( Input/Output) access (hard disk)
+Q74. What is the major difference between Memcache and Memcached?
+Ans.  Memcache – It enables a user to work through handy object-oriented and procedural interfaces and reduces database load in dynamic web applications.
+Memcached – It uses libmemcached library to provide API for communicating with Memcached servers. It is the latest API that alleviates database load.
+Q75. What is the Dogpile effect? How would prevent this?
+Ans.  The Dogpile effect is an event when the cache expires, and websites receive multiple requests by the user simultaneously. This event can be prevented by the use of a semaphore lock. This helps to generate new value when the system value expires.
+
